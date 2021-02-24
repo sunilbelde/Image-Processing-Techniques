@@ -32,4 +32,19 @@ HOW TO PROCEED:
   
 4.Open the ImageProcessing.html to see the results.
 
-5.If you want to generate images one after other run the commands that are available in the ImageProcessing.html page.
+5.If you want to generate images one after other run the commands that are available in the ImageProcessing.html page
+
+Results:
+========
+
+Implemented Features:
+1.Brightness
+2.Contrast
+3.Blur
+4.Sharpen
+5.Edge Detection
+6.Adding Noise
+7.Composite operation and
+8.Upscaling
+
+
