@@ -47,4 +47,9 @@ Implemented Features:
 7.Composite operation and
 8.Upscaling
 
+outputs :
 
+
+![plot](https://github.com/sunilbelde/Image-Processing-Techniques/Results1.JPG)
+
+![plot](https://github.com/sunilbelde/Image-Processing-Techniques/Results2.JPG)
