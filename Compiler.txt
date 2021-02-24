@@ -1,0 +1,19 @@
+Linux (Red Hat):
+
+Install latest version of python3.7 or above, run the below commands to install and setup the environment for python if not done:
+
+$ sudo su
+$ yum update -y
+$ yum install -y python3
+$ cd path to the project
+$python3 -m venv myenv
+$source myenv/bin/activate
+$pip install --upgrade pip
+$pip install -r requirements.txt
+
+
+Windows:
+
+for windows you can install python by downloading .exe file here:
+
+https://www.python.org/downloads/windows/

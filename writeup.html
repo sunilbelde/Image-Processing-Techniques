@@ -1,0 +1,378 @@
+<html>
+
+<head>
+ <title>
+  Image Processing Challenge
+ </title>
+</head>
+
+<body bgcolor="#ffffff">
+
+<br><hr>
+
+<center>
+<h2>
+Image Processing Challenge
+<br>
+BELDE SUNIL           <!-- Fill in your name and login -->
+</h2>                     
+</center>
+
+<br><hr>
+
+
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<H2>List of Implemented Features</H2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+I have implemented the following features:
+<ul>
+  <li><a href="#Brightness">Brightness</a></LI>
+  <li><a href="#Contrast">Contrast</a></LI>
+  <li><a href="#Blur">Blur</a></LI>
+  <li><a href="#Sharpen">Sharpen</a></LI>
+  <li><a href="#EdgeDetect">Edge detect</a></LI>
+  <li><a href="#Noise">Noise</a></LI>
+  <li><a href="#Composite">Composite</a></LI>
+  <li><a href="#Upscaling">Upscaling</a></LI>
+</ul>
+<br><hr>
+
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+<h2>Demonstration of Implemented Features</h2>
+<!------------------------------------------------------------------------> 
+<!------------------------------------------------------------------------> 
+
+<h3><A name='Brightness'>Brightness</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/princeton_small.jpg">
+      <img width=200 src="input/princeton_small.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_brighten_img_0.0.jpg">
+      <img width=200 src="output/princeton_small_brighten_img_0.0.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_brighten_img_0.5.jpg">
+      <img width=200 src="output/princeton_small_brighten_img_0.5.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_brighten_img_2.0.jpg">
+      <img width=200 src="output/princeton_small_brighten_img_2.0.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Brightness 0.0 </td>
+    <td align="center"> Brightness 0.5 </td>
+    <td align="center"> Brightness 2.0 </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+      $python src/Imagepro.py Brighten princeton_small.jpg  0.0 <br>
+        <br>
+      $python src/Imagepro.py Brighten princeton_small.jpg  0.5 <br>
+        <br>
+      $python src/Imagepro.py Brighten princeton_small.jpg  2.0 <br>
+        <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+<!------------------------------------------------------------------------> 
+ 
+<h3><A name='Contrast'>Contrast</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/c.jpg">
+      <img width=200 src="input/c.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/c_contrast_img_-0.5.jpg">
+      <img width=200 src="output/c_contrast_img_-0.5.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/c_contrast_img_0.0.jpg">
+      <img width=200 src="output/c_contrast_img_0.0.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/c_contrast_img_0.5.jpg">
+      <img width=200 src="output/c_contrast_img_0.5.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/c_contrast_img_2.0.jpg">
+      <img width=200 src="output/c_contrast_img_2.0.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Contrast -0.5 </td>
+    <td align="center"> Contrast 0.0 </td>
+    <td align="center"> Contrast 0.5 </td>
+    <td align="center"> Contrast 2.0 </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+      $python src/Imagepro.py ChangeContrast c.jpg  -0.5<br>
+       <br>
+      $python src/Imagepro.py ChangeContrast c.jpg  0.0 <br>
+        <br>
+      $python src/Imagepro.py ChangeContrast c.jpg  0.5 <br>
+        <br>
+      $python src/Imagepro.py ChangeContrast c.jpg  2.0 <br>
+        <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+<!------------------------------------------------------------------------> 
+
+<h3><A name='Blur'>Blur</h3>
+Below Results are obtained without padding. Hence, the sizes of the outputs are reducing with filter size
+<table>
+  <tr>
+    <td>
+      <a href="input/princeton_small.jpg">
+      <img width=200 src="input/princeton_small.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_blur_img_0.5.jpg">
+      <img width=200 src="output/princeton_small_blur_img_0.5.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_blur_img_2.0.jpg">
+      <img width=200 src="output/princeton_small_blur_img_2.0.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_blur_img_8.0.jpg">
+      <img width=200 src="output/princeton_small_blur_img_8.0.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Blur 0.5 </td>
+    <td align="center"> Blur 2 </td>
+    <td align="center"> Blur 8 </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+      $python src/Imagepro.py Blur princeton_small.jpg 0.5 <br>
+ <br>
+      $python src/Imagepro.py Blur princeton_small.jpg 2 <br>
+<br>
+      $python src/Imagepro.py Blur princeton_small.jpg 8 <br>
+ <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+<!------------------------------------------------------------------------>
+
+<h3><A name='Sharpen'>Sharpen</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/princeton_small.jpg">
+      <img width=200 src="input/princeton_small.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_sharpen.jpg">
+      <img width=200 src="output/princeton_small_sharpen.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Sharpen </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+      $python src/Imagepro.py Sharpen princeton_small.jpg<br>
+ <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+<!------------------------------------------------------------------------>
+
+<h3><A name='EdgeDetect'>Edge detect</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/cube.jpg">
+      <img width=200 src="input/cube.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/cube_edge_detector.jpg">
+      <img width=200 src="output/cube_edge_detector.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Edge detect </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+      $python src/Imagepro.py EdgeDetect cube.jpg <br>
+<br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+<!------------------------------------------------------------------------>
+
+
+<h3><A name='Noise'>Noise</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/princeton_small.jpg">
+      <img width=200 src="input/princeton_small.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_noise_img_0.3.jpg">
+      <img width=200 src="output/princeton_small_noise_img_0.3.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_noise_img_0.5.jpg">
+      <img width=200 src="output/princeton_small_noise_img_0.5.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_noise_img_1.0.jpg">
+      <img width=200 src="output/princeton_small_noise_img_1.0.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Noise 0.3 </td>
+    <td align="center"> Noise 0.5 </td>
+    <td align="center"> Noise 1.0 </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+      $python src/Imagepro.py addNoise princeton_small.jpg 0.3<br>
+ <br>
+      $python src/Imagepro.py addNoise princeton_small.jpg 0.5 <br>
+   <br>
+      $python src/Imagepro.py addNoise princeton_small.jpg 1 <br>
+ <br>
+
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+
+<!------------------------------------------------------------------------>
+
+<h3><A name='Composite'>Composite</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/comp_background.jpg">
+      <img width=200 src="input/comp_background.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="input/comp_foreground.jpg">
+      <img width=200 src="input/comp_foreground.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="input/comp_mask.jpg">
+      <img width=200 src="input/comp_mask.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/composite_img.jpg">
+      <img width=200 src="output/composite_img.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Base </td>
+    <td align="center"> Top </td>
+    <td align="center"> Alpha channel of top </td>
+    <td align="center"> Result </td>
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+    $python src/Imagepro.py composite comp_background.jpg comp_foreground.jpg comp_mask.jpg <br>
+      <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+<!------------------------------------------------------------------------>
+
+<h3><A name='Upscaling'>Upscaling</h3>
+<table>
+  <tr>
+    <td>
+      <a href="input/princeton_small.jpg">
+      <img width=200 src="input/princeton_small.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_upscale_2.jpg">
+      <img src="output/princeton_small_upscale_2.jpg">
+      </a>
+    </td>
+    <td>
+      <a href="output/princeton_small_upscale_3.jpg">
+      <img src="output/princeton_small_upscale_3.jpg">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"> Input </td>
+    <td align="center"> Upscale 2x </td>
+    <td align="center"> Upscale 3x </td>
+
+  </tr>
+  <tr>
+    <td vAlign=top align=middle colspan="5">
+    $python src/Imagepro.py Upscaling princeton_small.jpg 2 <br>
+      <br>
+	  $python src/Imagepro.py Upscaling princeton_small.jpg 3 <br>
+      <br>
+    </td>
+  </tr>
+</table>
+<br><hr>
+
+</body>
+</html>
