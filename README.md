@@ -38,14 +38,14 @@ Results:
 ========
 
 Implemented Features:
-1.Brightness
-2.Contrast
-3.Blur
-4.Sharpen
-5.Edge Detection
-6.Adding Noise
-7.Composite operation and
-8.Upscaling
+* Brightness
+* Contrast
+* Blur
+* Sharpen
+* Edge Detection
+* Adding Noise
+* Composite operation and
+* Upscaling
 
 outputs :
 
