@@ -50,6 +50,6 @@ Implemented Features:
 outputs :
 
 
-![plot](https://github.com/sunilbelde/Image-Processing-Techniques/blob/Results1.JPG)
+![plot](https://github.com/sunilbelde/Image-Processing-Techniques/blob/main/blob/Results1.JPG)
 
-![plot](https://github.com/sunilbelde/Image-Processing-Techniques/blob/Results2.JPG)
+![plot](https://github.com/sunilbelde/Image-Processing-Techniques/blob/main/blob/Results2.JPG)
